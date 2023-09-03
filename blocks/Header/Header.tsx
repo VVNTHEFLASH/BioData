@@ -1,4 +1,3 @@
-import React from 'react'
 import HeaderController from './HeaderController'
 
 export default class Header extends HeaderController {

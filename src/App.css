@@ -1,0 +1,22 @@
+.renderBioDataItemContainer {
+}
+
+.renderBioDataItemChildOne span {
+  color: #daed4d;
+  font-size: 20px;
+  margin-left: 5px;
+  margin-top: 1px;
+}
+
+.renderBioDataItemChildTwo span {
+  color: #dee5a2;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-top: 1px;
+}
+
+.container {
+  /* height: 100vh; */
+  /* width: 100%; */
+  background-color: black;
+}

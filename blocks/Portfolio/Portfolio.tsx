@@ -120,7 +120,7 @@ export default class Portfolio extends Component {
     return (
         <div className='portfolioContainer'>
             <div className='leftContainer'>
-                <img className='leftImage' src="../../BioData/src/assets/vishnu.jpg" alt="profile" />          
+                <img className='leftImage' src="../../../public/vishnu.jpg" alt="profile" />          
             </div>
             <div className='leftContent'>
                 <div style={{ marginTop: 30}}>

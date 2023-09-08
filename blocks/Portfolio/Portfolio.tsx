@@ -139,27 +139,27 @@ export default class Portfolio extends Component {
                         color: '#d9e1f1'
                     }}>SOFTWARE ENGINEER</p>
                 </div>
-                <div style={{ marginTop: 30}}>
+                <div style={styles.Card}>
                     <p style={styles.ItemHeading}>Personal Details</p>
                     {personalData.map((item) => this.renderBioDataItem(item))}
                 </div>
-                <div>
+                <div style={styles.Card}>
                     <p style={styles.ItemHeading}>Career Details</p>
                     {careerData.map((item) => this.renderBioDataItem(item))}
                 </div>
-                <div>
+                <div style={styles.Card}>
                     <p style={styles.ItemHeading}>Family Details</p>
                     {familyData.map((item) => this.renderBioDataItem(item))}
                 </div>
-                <div>
+                <div style={styles.Card}>
                     <p style={styles.ItemHeading}>Location & Contact Details</p>
                     {locationAndContactData.map((item) => this.renderBioDataItem(item))}
                 </div>
-                <div>
+                <div style={styles.Card}>
                     <p style={styles.ItemHeading}>Religious Details</p>
                     {religiousData.map((item) => this.renderBioDataItem(item))}
                 </div>
-                <div className='mobile-grid'>
+                <div style={styles.Card} className='mobile-grid'>
                         {chakraTableData.map((item) => this.renderChakraTable(item))}
                 </div>
             </div> 
@@ -177,6 +177,12 @@ const styles: {[key: string]: React.CSSProperties} = {
         textTransform: 'uppercase',
         marginBottom: 20,
         marginTop: 20
+    },
+    Card: {
+        borderRadius: 15,
+        margin: 10,
+        padding: 10,
+        boxShadow: '0px 0px 3px grey',
     }
 }
 

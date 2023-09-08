@@ -1,5 +1,5 @@
 import { Component } from 'react'
-
+import image from "../../public/vishnu.jpg"
 export default class Portfolio extends Component {
 
     renderPara = (item: string) => {
@@ -120,7 +120,7 @@ export default class Portfolio extends Component {
     return (
         <div className='portfolioContainer'>
             <div className='leftContainer'>
-                <img className='leftImage' src="../../../public/vishnu.jpg" alt="profile" />          
+                <img className='leftImage' src={image} alt="profile" />          
             </div>
             <div className='leftContent'>
                 <div style={{ marginTop: 30}}>

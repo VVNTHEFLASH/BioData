@@ -11,7 +11,7 @@
 }
 
 .renderBioDataItemChildOne span {
-  color: #aaadc2;
+  color: #72f1a7;
   font-size: 20px;
   margin-left: 15px;
   margin-top: 1px;
@@ -19,7 +19,7 @@
 }
 
 .renderBioDataItemChildTwo span {
-  color: #d9e1f1;
+  color: #72f1a7;
   font-size: 20px;
   margin-left: 25px;
   margin-top: 1px;
@@ -28,7 +28,7 @@
 .container {
   /* height: 100vh; */
   /* width: 100%; */
-  /* background-color: rgb(0, 0, 0); */
+  background-color: rgb(0, 0, 0);
 }
 
 .box {
@@ -56,7 +56,7 @@
   grid-gap: 30px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 560px) {
   .mobile-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;

@@ -127,7 +127,7 @@ export default class Portfolio extends Component {
                     <h1 style={{
                         fontWeight: 'bolder',
                         fontSize: 46,
-                        color: '#aaadc2',
+                        color: '#72f1a7',
                         textAlign: 'center',
                     }}>Vishnu Vardhan</h1>
                 </div>
@@ -136,7 +136,7 @@ export default class Portfolio extends Component {
                         fontWeight: 'bold',
                         fontSize: 20,
                         textAlign: 'center',
-                        color: '#d9e1f1'
+                        color: '#b7f7d2'
                     }}>SOFTWARE ENGINEER</p>
                 </div>
                 <div style={styles.Card}>
@@ -172,7 +172,7 @@ const styles: {[key: string]: React.CSSProperties} = {
     ItemHeading: {
         fontSize: 24,
         fontWeight: 'bolder',
-        color: 'grey',
+        color: '#72f1a7',
         textAlign: 'center',
         textTransform: 'uppercase',
         marginBottom: 20,
@@ -182,7 +182,8 @@ const styles: {[key: string]: React.CSSProperties} = {
         borderRadius: 15,
         margin: 10,
         padding: 10,
-        boxShadow: '0px 0px 3px grey',
+        boxShadow: '0px 0px 3px #72f1a7',
+        backgroundColor: '#e1fcecab'
     }
 }
 

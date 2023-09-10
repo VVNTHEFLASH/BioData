@@ -257,24 +257,28 @@ const careerData = [
 
 const familyData = [
     {
-        label: "Parent name",
+        label: "Mother",
         value: "Malar Vizhi"
-    },
-    {
-        label: 'Brother name',
-        value: 'Karthikeyan'
-    },
-    {
-        label: "Sister-in-law name",
-        value: "Priyanka K"
-    },
-    {
-        label: "Nephew name",
-        value: "Mithran"
     },
     {
         label: 'Mother occupation',
         value: 'Retired(Govt school teacher)'
+    },
+    {
+        label: 'Brother',
+        value: 'Karthi Keyan S'
+    },
+    {
+        label: "Sister-in-law",
+        value: "Priyanka K"
+    },
+    {
+        label: "Nephew",
+        value: "Mithran K"
+    },
+    {
+        label: "Father",
+        value: "Sundara ganesan"
     },
 ]
 

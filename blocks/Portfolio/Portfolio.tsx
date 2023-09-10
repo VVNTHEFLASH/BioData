@@ -1,5 +1,6 @@
 import { Component } from 'react'
 import image from "../../public/vishnu.jpg"
+import locationSvg from '../../public/location.svg'
 export default class Portfolio extends Component {
 
     renderPara = (item: string) => {
@@ -65,8 +66,8 @@ export default class Portfolio extends Component {
                             alignItems: 'center',
                             width: '120px',
                             height: '120px',
-                            backgroundColor: '#dbe3f3',
-                            border: '1px black solid' 
+                            backgroundColor: '#ffffff',
+                            border: '1px #ffffff solid' 
                         }}>
                             {item['13']}
                         </div>
@@ -104,6 +105,7 @@ export default class Portfolio extends Component {
       renderBioDataItem = (data: {
         label: string,
         value: string
+        isAddress?: boolean
       }) => {
         return (
             <div className='renderBioDataItemContainer'>
@@ -111,7 +113,15 @@ export default class Portfolio extends Component {
                     <span>{data.label}</span>
                 </div>
                 <div className='renderBioDataItemChildTwo'>
-                    <span>{data.value}</span>
+                    {data.isAddress ? (
+                        <a style={{
+                            textDecoration: 'none'
+                        }} href="https://www.google.com/maps/dir/13.110173,80.1093562/Rockhunters+Project+Makers,+No.74,+4th+Main+Rd,+Anna+Nagar,+Annamalai+Nagar,+Avadi,+Tamil+Nadu+600054,+India/@13.1130181,80.1088163,17z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3a52626387ba8159:0x71210177a1fd28c!2m2!1d80.1126572!2d13.1161262?entry=ttu">
+                            <img src={locationSvg} alt="SVG" style={{
+                                marginRight: 10
+                        }}/><span>{data.value}</span>
+                        </a>
+                ) : <span>{data.value}</span>}
                 </div>
             </div>
         )
@@ -127,7 +137,7 @@ export default class Portfolio extends Component {
                     <h1 style={{
                         fontWeight: 'bolder',
                         fontSize: 46,
-                        color: '#72f1a7',
+                        color: '#000000',
                         textAlign: 'center',
                     }}>Vishnu Vardhan</h1>
                 </div>
@@ -136,7 +146,7 @@ export default class Portfolio extends Component {
                         fontWeight: 'bold',
                         fontSize: 20,
                         textAlign: 'center',
-                        color: '#b7f7d2'
+                        color: '#000000'
                     }}>SOFTWARE ENGINEER</p>
                 </div>
                 <div style={styles.Card}>
@@ -172,7 +182,7 @@ const styles: {[key: string]: React.CSSProperties} = {
     ItemHeading: {
         fontSize: 24,
         fontWeight: 'bolder',
-        color: '#72f1a7',
+        color: '#000000',
         textAlign: 'center',
         textTransform: 'uppercase',
         marginBottom: 20,
@@ -182,8 +192,8 @@ const styles: {[key: string]: React.CSSProperties} = {
         borderRadius: 15,
         margin: 10,
         padding: 10,
-        boxShadow: '0px 0px 3px #72f1a7',
-        backgroundColor: '#e1fcecab'
+        boxShadow: '0px 0px 3px #ffffff',
+        backgroundColor: '#ffffffff'
     }
 }
 
@@ -285,7 +295,8 @@ const locationAndContactData = [
     },
     {
         label: 'Address',
-        value: '74/2, 4th main road, Annamalai nagar, Avadi, Chennai - 600054'
+        value: '74/2, 4th main road, Annamalai nagar, Avadi, Chennai - 600054',
+        isAddress: true
     },
 ]
 const religiousData = [

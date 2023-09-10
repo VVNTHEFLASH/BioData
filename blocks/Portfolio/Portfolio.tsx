@@ -146,7 +146,7 @@ export default class Portfolio extends Component {
                         fontWeight: 'bold',
                         fontSize: 20,
                         textAlign: 'center',
-                        color: '#000000'
+                        color: '#000000ff',
                     }}>SOFTWARE ENGINEER</p>
                 </div>
                 <div style={styles.Card}>
@@ -172,6 +172,10 @@ export default class Portfolio extends Component {
                 <div style={styles.Card} className='mobile-grid'>
                         {chakraTableData.map((item) => this.renderChakraTable(item))}
                 </div>
+                <div>
+                    <p>Designed & Coded by <a href="https://github.com/VVNTHEFLASH">
+                        @VVNTHEFLASH</a></p>
+                </div>
             </div> 
         </div>
     )
@@ -186,7 +190,7 @@ const styles: {[key: string]: React.CSSProperties} = {
         textAlign: 'center',
         textTransform: 'uppercase',
         marginBottom: 20,
-        marginTop: 20
+        marginTop: 20,
     },
     Card: {
         borderRadius: 15,

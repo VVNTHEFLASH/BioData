@@ -28,12 +28,23 @@
   margin-top: 1px;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 .container {
   /* height: 100vh; */
   /* width: 100%; */
   background-color: #72f1a7;
 }
-
+.container::-webkit-scrollbar {
+  display: none;
+}
 .box {
   height: 60px;
   width: 60px;
